@@ -1,0 +1,25 @@
+/* ****************************************** */
+/* ====== This is text onscroll styles ====== */
+.element-animation{
+    opacity: 0;
+    transition: all 1s;
+}
+.anim-left{
+    transform: translate(-14vw, 0px);
+}
+.anim-right{
+    transform: translate(14vw, 0px);
+}
+.element-show{
+    opacity: 1;
+    transform: translate(0vw, 0px);
+}
+/* ========================================== */
+/* ****************************************** */
+
+
+/* 
+"...path" ul li:nth-child(1){
+    transition-delay: 0.25s;
+}
+*/

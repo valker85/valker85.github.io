@@ -1,2 +1,2 @@
 # valker85.github.io
-This is my personal site
+This is my CV

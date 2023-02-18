@@ -1,0 +1,14 @@
+{
+  "name": "mycard",
+  "version": "1.0.0",
+  "description": "Hello! I am a frontend developer, my name is Daniil Kudryashov. This is my personal site and I will be very happy if you check it out!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniil Kudryashov <dan.work855@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "jarallax": "^2.1.3"
+  }
+}
