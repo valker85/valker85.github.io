@@ -20,6 +20,57 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: #3a50d9;
 }
+/* Header */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #060606;
+    color: white;
+    padding: 15px 0;
+}
+header .logo{
+    transform: translate(0, 5px);
+}
+header .content{
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li{
+    margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+header ul li a:hover{
+    color: #3a50d9;
+}
+header ul li:hover{
+    transform: translate(0, -3px) scale(1.1);
+}
+header ul li.active > a{
+    color: #3a50d9;
+}
+header ul li:first-child.active > a{
+    color: white;
+}
+header ul li:first-child.active:hover > a{
+    color: #3a50d9;
+}
+/* Cursor */
 body {
     position: relative;
     cursor: url('../images/cursors/myCursor.cur'), auto;
@@ -192,59 +243,116 @@ section.two{
     background: white;
     color: #060606;
     position: relative;
+    padding-top: 80px;
 }
-header{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: #060606;
-    color: white;
-    padding: 15px 0;
+/* section name */
+section.two .about{
+    position: relative;
+    text-align: center;
 }
-header .logo{
-    transform: translate(0, 5px);
+section.two .about h1{
+    position: relative;
+    color: #060606;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 6.77vw;
+    opacity: 0.1;
+    z-index: 2;
 }
-header .content{
+section.two .about .title{
+    position: absolute;
+    display: inline-block;
     margin: 0 auto;
-    max-width: 1200px;
+    text-align: center;
+}
+section.two .about h3{
+    position: absolute;
+    z-index: 3;
+    top:40%;
+    left:50%;
+    transform:translate(-50%, -50%);
+
+    color: #3a50d9;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+}
+section.two .about .line{
+    display: flex;
+    justify-content: center;
+}
+section.two .about .line > div{
+    background: #060606;
+    width: 2px;
+    height: 60px;
+}
+/* ------- */
+section.two .content{
+    max-width: 1300px;
     width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+    color: #060606;
+    margin-bottom: 60px;
+}
+section.two .content p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    color: #060606;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+}
+section.two .content .circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 50px;
+    background: #3a50d9;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+section.two .content a{
+
+}
+section.two .content h3{
+    font-size: 22px;
+    color: #3a50d9;
+    margin-bottom: 40px;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3), 2px 2px 2px rgba(206,89,55,0);
+}
+section.two .content .skill{
+    margin-bottom: 20px;
+}
+section.two .content .skill .name{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-bottom: 5px;
 }
-header ul{
-    list-style: none;
-    display: flex;
+section.two .content .skill .name h4{
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3), 2px 2px 2px rgba(206,89,55,0);
+    font-size: 20px;
+    letter-spacing: -1px;
 }
-header ul li{
-    margin-left: 30px;
-    text-transform: uppercase;
-    font-size: 18px;
-    transition: all 0.3s ease;
+section.two .content .skill .name .percent{
+    font-size: 20px;
+    margin: 0;
 }
-header ul li a{
-    color: white;
-    text-decoration: none;
-    transition: all 0.3s ease;
+section.two .content .skill .line{
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #3a4fd938;
 }
-header ul li a:hover{
-    color: #3a50d9;
-}
-header ul li:hover{
-    transform: translate(0, -3px) scale(1.1);
-}
-header ul li.active > a{
-    color: #3a50d9;
-}
-header ul li:first-child.active > a{
-    color: white;
-}
-header ul li:first-child.active:hover > a{
-    color: #3a50d9;
+section.two .content .skill .line .progress{
+    background: #3a50d9;
+    border-radius: 5px;
+    height: 100%;
+    width: 50%;
 }
 section.two .parallax{
     position: relative;
-    height: 300px;
     z-index: 1;
     background: url(../images/sec1bg.jpg);
     background-attachment: fixed;
@@ -262,7 +370,54 @@ section.two .parallax::after{
     background: #060606a3;
     z-index: 2;
 }
-
+section.two .parallax-content{
+    position: relative;
+    z-index: 3;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+section.two .parallax-content h3{
+    text-align: center;
+    color: #e0eff2;
+    text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+section.two .parallax-content ul{
+    list-style: none;
+    margin-left: 30px;
+    text-align: center;
+}
+section.two .parallax-content ul li{
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: white;
+    margin-bottom: 5px;
+}
+section.two .parallax-content ul li:nth-child(1){
+    transition-delay: 0.25s;
+}
+section.two .parallax-content ul li:nth-child(2){
+    transition-delay: 0.40s;
+}
+section.two .parallax-content ul li:nth-child(3){
+    transition-delay: 0.55s;
+}
+section.two .parallax-content ul li:nth-child(4){
+    transition-delay: 0.70s;
+}
+section.two .parallax-content ul li:nth-child(5){
+    transition-delay: 0.75s;
+}
+section.two .parallax-content ul li:nth-child(6){
+    transition-delay: 1s;
+}
+section.two .parallax-content ul li:nth-child(7){
+    transition-delay: 1.15s;
+}
+section.two .parallax-content ul li:nth-child(8){
+    transition-delay: 1.30s;
+}
 /* ================== Section 3 ================= */
 section.three{
     height: 1000px;

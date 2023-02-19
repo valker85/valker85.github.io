@@ -10,6 +10,12 @@
 .anim-right{
     transform: translate(14vw, 0px);
 }
+.anim-top{
+    transform: translate(0, -14vw);
+}
+.anim-bottom{
+    transform: translate(0, 14vw);
+}
 .element-show{
     opacity: 1;
     transform: translate(0vw, 0px);
