@@ -1,0 +1,59 @@
+section.two .parallax-mouse-effect,
+section.three .parallax-mouse-effect{
+    color: #ffa500;
+    font-weight: 900;
+    font-size: 2vw;
+    opacity: 0.5;
+}
+section.three .parallax-mouse-effect{
+    color: rgb(0, 255, 119);
+}
+section.two .decoration-wrapper,
+section.three .decoration-wrapper{
+    position: absolute;
+}
+section.two .decoration-wrapper:nth-child(1),
+section.three .decoration-wrapper:nth-child(1){
+    top: 130px;
+    left: 4.16vw;
+    transform: rotate(-20deg);
+}
+section.two .decoration-wrapper:nth-child(2),
+section.three .decoration-wrapper:nth-child(2){
+    top: 200px;
+    left: 20.83vw;
+    transform: rotate(20deg);
+}
+section.two .decoration-wrapper:nth-child(3),
+section.three .decoration-wrapper:nth-child(3){
+    right: 26.04vw;
+    top: 80px;
+    transform: rotate(20deg);
+}
+section.two .decoration-wrapper:nth-child(4),
+section.three .decoration-wrapper:nth-child(4){
+    right: 23.43vw;
+    top: 300px;
+    transform: rotate(-20deg);
+}
+section.two .decoration-wrapper:nth-child(5),
+section.three .decoration-wrapper:nth-child(5){
+    right: 10.41vw;
+    top: 150px;
+    transform: rotate(20deg);
+}
+section.two .decoration-wrapper:nth-child(6),
+section.three .decoration-wrapper:nth-child(6){
+    top: 400px;
+    left: 3vw;
+    transform: rotate(20deg);
+}
+section.two .decoration-wrapper:nth-child(7),
+section.three .decoration-wrapper:nth-child(7){
+    right: 3vw;
+    top: 400px;
+    transform: rotate(20deg);
+}
+section.three .decoration-wrapper:nth-child(1){
+    top: 80px;
+}

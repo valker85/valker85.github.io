@@ -1,7 +1,6 @@
 const title = document.querySelector('.printEffect')
 
-
-window.onload = function write() {
+function write() {
   let txt = '-разработчик';
   let newName = 'Frontend'
   let time = 0
@@ -14,3 +13,4 @@ window.onload = function write() {
     }, time);
   }
 }
+write()

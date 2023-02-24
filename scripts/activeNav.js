@@ -10,9 +10,14 @@ window.addEventListener('scroll', ()=>{
                 if(el.classList.contains('active')){
                     el.classList.remove('active')
                 }
-            });
+            })
 
             document.querySelectorAll('.navBar li')[i].classList.add('active')
+            if(i === 2){
+                document.querySelector('.header').classList.add('light')
+            } else {
+                document.querySelector('.header').classList.remove('light')
+            }
         }
     })
 })
