@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     form.addEventListener('submit', formSend)
 
-    async function formSend(e) {
+    function formSend(e) {
         e.preventDefault()
 
         let error = formValidate(form)
@@ -12,27 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if(error === 0){
             form.submit()
-            // form.classList.add('_sending')
 
-            // console.log(formData)
-            
-            // let response = await fetch('../sendmail.php', {
-            //     method: 'POST',
-            //     body: formData
-            // })
-
-            // console.log(response)
-            // if(response.ok){
-            //     let result = await response.json()
-
-            //     console.log(response.ok);
-                
-            //     form.reset()
-            //     form.classList.remove('_sending')
-            // } else{
-            //     console.log('Error: ', response.ok)
-            //     form.classList.remove('_sending')
-            // }
         }
 
     }
