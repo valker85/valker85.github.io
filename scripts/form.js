@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if(error === 0){
             form.submit()
-
+            form.reset()
         }
 
     }
@@ -58,6 +58,10 @@ document.addEventListener('DOMContentLoaded', function () {
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
     }
+
+    function clearInput(input) {
+        input.value = ''
+    }
 })
-// /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])
+
 
