@@ -8,23 +8,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let error = formValidate(form)
 
-        let formData = new FormData(form)
+        // let formData = new FormData(form)
 
         if(error === 0){
-            form.classList.add('_sending')
-            let response = await fetch('sendmail.php', {
-                method: 'POST',
-                body: formData
-            })
-            if(response.ok){
-                let result = await response.json()
-                alert(result.message)
-                form.reset()
-                form.classList.remove('_sending')
-            } else{
-                alert('Error')
-                form.classList.remove('_sending')
-            }
+            form.submit()
+            // form.classList.add('_sending')
+
+            // console.log(formData)
+            
+            // let response = await fetch('../sendmail.php', {
+            //     method: 'POST',
+            //     body: formData
+            // })
+
+            // console.log(response)
+            // if(response.ok){
+            //     let result = await response.json()
+
+            //     console.log(response.ok);
+                
+            //     form.reset()
+            //     form.classList.remove('_sending')
+            // } else{
+            //     console.log('Error: ', response.ok)
+            //     form.classList.remove('_sending')
+            // }
         }
 
     }
