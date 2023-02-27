@@ -71,7 +71,6 @@ for (const block of parallaxBlocks) {
         }
 
 
-        console.log(positionY);
     })
 }
 

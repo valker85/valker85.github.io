@@ -88,6 +88,12 @@ body {
 a:hover{
     cursor: url('../images/cursors//finger.cur'), auto;  
 }
+::-moz-selection {
+    background-color: #00ff77;
+}
+::selection {
+    background-color: #21da8d;
+}
 /* ================== Section 1 ================= */
 section.one {
     width: 100%;
@@ -257,12 +263,16 @@ section.two{
 }
 /* section name */
 section.two .about,
-section.three .services{
+section.three .services,
+section.four .portfolio,
+section.five .contact{
     position: relative;
     text-align: center;
 }
 section.two .about h1,
-section.three .services h1{
+section.three .services h1,
+section.four .portfolio h1,
+section.five .contact h1{
     position: relative;
     text-transform: uppercase;
     font-weight: 900;
@@ -271,14 +281,18 @@ section.three .services h1{
     z-index: 2;
 }
 section.two .about .title,
-section.three .services .title{
+section.three .services .title,
+section.four .portfolio .title,
+section.five .contact .title{
     position: absolute;
     display: inline-block;
     margin: 0 auto;
     text-align: center;
 }
 section.two .about h3,
-section.three .services h3{
+section.three .services h3,
+section.four .portfolio h3,
+section.five .contact h3{
     position: absolute;
     z-index: 3;
     top:40%;
@@ -290,12 +304,18 @@ section.three .services h3{
     font-weight: 900;
 }
 section.two .about .line,
-section.three .services .line{
+section.three .services .line,
+section.four .portfolio .line,
+section.five .contact .line,
+section.five .line-bottom{
     display: flex;
     justify-content: center;
 }
 section.two .about .line > div,
-section.three .services .line > div{
+section.three .services .line > div,
+section.four .portfolio .line > div,
+section.five .contact .line > div,
+section.five .line-bottom > div{
     background: #060606;
     width: 2px;
     height: 60px;
@@ -440,7 +460,8 @@ section.three{
 section.three .services h1{
     color: white;
 }
-section.three .services .line > div{
+section.three .services .line > div,
+section.five .line-bottom > div{
     background: white;
 }
 section.three .content-block{
@@ -496,24 +517,229 @@ section.three .content-block .block:hover .line{
 section.three .content-block .block:hover{
     transform: scale(1.04);
 }
-
 /* ================== Section 4 ================= */
 section.four{
-    height: 1000px;
+    height: 800px;
+    background: white;
+    padding: 50px 0 100px;
+}
+section.four h3.info{
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 20px;
+    letter-spacing: -1px;
+    color: #060606;
+    text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
+}
+
+
+
+
+/* ================== Section 5 ================= */
+section.five{
+    background: #060606;
+    padding: 19vw 0 100px;
+    position: relative;
+    overflow: hidden;
+}
+section.five .circle-effect{
+    position: absolute;
+    top: 0;
+    height: fit-content;
+    background: white;
+    border-radius: 0 0 50% 50%;
+    width: 120%;
+    left: -10%;
+    padding-bottom: 30px;
+    padding-top: 70px;
+}
+section.five .info{
+    color: #e0eff2;
+    text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;    
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 40px;
+}
+section.five .content-block{
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+section.five .content-block .info-block{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+section.five .content-block .info-block .img-wrapper{
+    display: flex;
+}
+section.five .content-block .info-block img{
+    width: 26px;
+    margin-right: 5px;
+}
+section.five .content-block .info-block h3{
+    margin-left: 10px;
+    font-size: 18px;
+}
+section.five .content-block .line{
+    width: 1px;
+    height: 20px;
     background: white;
 }
-/* ================== Section 4 ================= */
-section.five{
-    height: 1000px;
-    background: #8a9308;
+section.five .connect-block{
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+section.five .connect-block .social{
+    max-width: 300px;
+    width: 100%;
+}
+section.five .connect-block .social h3{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+section.five .connect-block .social .inst{
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+section.five .connect-block .social .vk{
+    display: inline-block;
+}
+section.five .connect-block .github{
+    margin-bottom: 30px;
+}
+section.five .connect-block .social img{
+    width: 30px;
+    transition: all 0.3s ease;
+}
+section.five .connect-block .social img:hover{
+    transform: scale(1.3);
+}
+section.five .connect-block .connect{
+    width: 100%;
+}
+section.five .connect-block .form_item{
+    margin-bottom: 30px;
+}
+section.five .connect-block .form_body{
+    position: relative;
+}
+section.five .connect-block .form_body .loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.five .connect-block .form_body._sending .loader{
+    width: 100%;
+    right: 0;
+}
+section.five .connect-block .form_body .lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+section.five .connect-block .form_body .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #3a50d9 transparent #3a50d9 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+section.five .connect-block .form_body {
+
+}
+section.five .connect-block .form_input{
+    background: transparent;
+    border: 1px solid white;
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+section.five .connect-block .form_input:focus{
+    border: 1px solid #3a50d9;
+}
+section.five .connect-block .form_input._error{
+    border: 1px solid #bf4646;
+}
+section.five .connect-block textarea{
+    width: 100% !important;
+    height: 120px;
+    resize: none;
+}
+section.five .connect-block textarea::-webkit-scrollbar {
+    width: 8px;
+}
+section.five .connect-block textarea::-webkit-scrollbar-track {
+    background: #060606;
+} 
+section.five .connect-block textarea::-webkit-scrollbar-thumb {
+    background: #3a4fd9bb;
+    border-radius: 8px;
+}
+section.five .connect-block textarea::-webkit-scrollbar-thumb:hover {
+    background: #3a50d9;
+}
+section.five .connect-block button{
+    float: right;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+section.five .connect-block button:hover{
+    cursor: url(../images/cursors/finger.cur), auto;
+    background: #3a50d9;
+    border: 1px solid #3a50d9;
+}
+/* ================== Footer ================= */
+footer{
+    padding: 20px;
+}
+footer .content{
+    text-align: center;
+    font-size: 12px;
+    letter-spacing: -1px;
 }
 /* ****************************************** */
-
-
-
-
 /* Основные цвета 
-    
     #3a50d9 - синий
     #060606 - черный
 */
