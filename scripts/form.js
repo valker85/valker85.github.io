@@ -8,13 +8,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         let error = formValidate(form)
 
-        // let formData = new FormData(form)
-
         if(error === 0){
             form.submit()
             form.reset()
         }
-
     }
 
     function formValidate(form) {
@@ -41,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         }
-
         return error
     }
 
@@ -57,10 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function emailTest(input) {
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value)
-    }
-
-    function clearInput(input) {
-        input.value = ''
     }
 })
 

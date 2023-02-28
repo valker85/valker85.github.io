@@ -519,9 +519,8 @@ section.three .content-block .block:hover{
 }
 /* ================== Section 4 ================= */
 section.four{
-    height: 800px;
     background: white;
-    padding: 50px 0 100px;
+    padding: 50px 0 50px;
 }
 section.four h3.info{
     max-width: 400px;
@@ -535,10 +534,76 @@ section.four h3.info{
     color: #060606;
     text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc, 1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee, 4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc, 4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee, 7px 6px 1px #cccccc;
 }
+section.four .projects{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+section.four .projects .project img{
+    width: 100%;
+}
+section.four .projects .project{
+    height: 350px;
+    transform: rotateY(0deg);
+    position: relative;
+    cursor: url(../images/cursors/finger.cur), auto;
+}
+section.four .projects .front{
+    transition: all 0.5s ease;
+    position: relative;
+    z-index: 2;
+}
+section.four .projects .back{
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    background: #060606e1;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    backface-visibility: hidden;
+    padding: 30px;
+}
+section.four .projects .project:hover > .front{
+    transform: rotateY(180deg);
+}
+section.four .projects .project:hover > .back{
+    transform: rotateY(0deg);
+    z-index: 3;
+}
+section.four .projects .back h4{
+    color: #3a50d9;
+    font-size: 28px;
+    letter-spacing: -1px;
+}
+section.four .projects .back .line{
+    width: 65%;
+    height: 1px;
+    background: #3a50d9;
+    margin: 15px 0;
+}
+section.four .projects .back p{
+    font-size: 18px;
+    color: white;
+    margin-top: 30px;
+    /* letter-spacing: -1px; */
+
+}
 
 
-
-
+/* Основные цвета 
+    #3a50d9 - синий
+    #060606 - черный
+*/
 /* ================== Section 5 ================= */
 section.five{
     background: #060606;
@@ -637,49 +702,6 @@ section.five .connect-block .form_item{
 section.five .connect-block .form_body{
     position: relative;
 }
-section.five .connect-block .form_body .loader{
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section.five .connect-block .form_body._sending .loader{
-    width: 100%;
-    right: 0;
-}
-section.five .connect-block .form_body .lds-dual-ring {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-}
-section.five .connect-block .form_body .lds-dual-ring:after {
-    content: " ";
-    display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border-radius: 50%;
-    border: 6px solid #fff;
-    border-color: #3a50d9 transparent #3a50d9 transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-}
-@keyframes lds-dual-ring {
-    0% {
-    transform: rotate(0deg);
-    }
-    100% {
-    transform: rotate(360deg);
-    }
-}
-section.five .connect-block .form_body {
-
-}
 section.five .connect-block .form_input{
     background: transparent;
     border: 1px solid white;
@@ -739,7 +761,3 @@ footer .content{
     letter-spacing: -1px;
 }
 /* ****************************************** */
-/* Основные цвета 
-    #3a50d9 - синий
-    #060606 - черный
-*/
