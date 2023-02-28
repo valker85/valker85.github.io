@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="./styles/textOnScroll.css">
         <link rel="stylesheet" href="./styles/parallax.css">
         <link rel="stylesheet" href="./styles/media.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
         <title>Daniil Kudryashov</title>
     </head>
@@ -270,6 +272,35 @@
             </div>
         </section>
 
+        <div class="pop_up">
+            <div class="pop_up_container">
+                <div class="pop_up_body">
+                    <div class="pop_up_close">&#10006</div>
+                    <h1 class="popUpText"></h1>
+
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="./images/portfolio/mini-image/binaryx.png" alt="test"></div>
+                          <div class="swiper-slide"><img src="./images/portfolio/mini-image/carmusc.png" alt="test"></div>
+                          <div class="swiper-slide"><img src="./images/portfolio/mini-image/konyakHotel.png" alt="test"></div>
+                          ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                      
+                        <!-- If we need scrollbar -->
+                      </div>
+
+                </div>
+            </div>
+        </div>
+
         <section class="section four" id="secFour">
             <div class="portfolio">
                 <h1>Портфолио</h1>
@@ -279,9 +310,8 @@
                 </div>
             </div>
             <h3 class="element-animation anim-top info">Тут лишь часть моих работ, но думаю этого хватит, что бы оценить уровень.</h3>
-
             <div class="projects">
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal1')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/carmusc.png" alt="CarMusc">
                     </div>
@@ -293,7 +323,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal2')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/ritmStyle.png" alt="RitmStyle">
                     </div>
@@ -304,7 +334,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal3')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/cryptoex.png" alt="CryptoExchange">
                     </div>
@@ -315,7 +345,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal4')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/nftAirdrop.PNG" alt="NftAirdrop">
                     </div>
@@ -326,7 +356,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal5')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/yukigassen.png" alt="Yukigassen">
                     </div>
@@ -337,7 +367,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal6')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/projectHope.png" alt="ProjectHope">
                     </div>
@@ -348,7 +378,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal7')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/coinpay.PNG" alt="CoinPay">
                     </div>
@@ -359,18 +389,18 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal8')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/binaryx.png" alt="BinaryX">
                     </div>
                     <div class="back">
                         <h4>BinaryX</h4>
                         <div class="line"></div>
-                        <p>Данный сайт был написан мною на React. Присутствует весь функционал. Этот сайт - заказ с фриланса.</p>
+                        <p>Данный сайт был написан мною на React. Этот сайт - заказ с фриланса.</p>
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal9')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/theHouse.png" alt="TheHouse">
                     </div>
@@ -381,7 +411,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal10')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/konyakHotel.png" alt="KonyakHotel">
                     </div>
@@ -392,7 +422,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal11')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/prokatAm.png" alt="ProkatAm">
                     </div>
@@ -403,7 +433,7 @@
                     </div>
                 </div>
 
-                <div class="project">
+                <div class="project" onclick="modalWindow('modal12')">
                     <div class="front">
                         <img src="./images/portfolio/mini-image/mrFast.png" alt="MrFast">
                     </div>
@@ -516,5 +546,35 @@
         <script src="./scripts/about.js"></script>
         <script src="./scripts/parallax.js"></script>
         <script src="./scripts/form.js"></script>
+        <script src="./scripts/modalWindow.js"></script>
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+          
+            const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                    dynamicBullets: true,
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                // },
+            });
+          </script>
     </body>
 </html>
