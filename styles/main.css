@@ -99,6 +99,7 @@ section.one {
     width: 100%;
     height: 100vh;
     position: relative;
+    overflow: hidden;
 }
 section.one .bg{
     position: absolute;
@@ -661,14 +662,15 @@ section.four .projects .back p{
 .swiper{
     width: 100%;
     height: 90%;
+    padding: 0 50px;
 }
 .swiper .swiper-button-prev{
-    left: 10px;
+    left: 15px;
     top: 350px;
     color: #060606;
 }
 .swiper .swiper-button-next{
-    right: 10px;
+    right: 25px;
     top: 350px;
     color: #060606;
 }
@@ -679,13 +681,19 @@ section.four .projects .back p{
 .swiper .swiper-slide img{
     /* display: block; */
     width: 93%;
-    height: 95%;
+    /* height: 95%; */
     object-fit: cover;
 }
-
-
-
-
+.swiper .swiper-slide::-webkit-scrollbar {
+    width: 8px;
+}
+.swiper .swiper-slide::-webkit-scrollbar-track {
+    background: white;
+} 
+.swiper .swiper-slide::-webkit-scrollbar-thumb {
+    background: #3a4fd9;
+    border-radius: 8px;
+}
 
 
 
