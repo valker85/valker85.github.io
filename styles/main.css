@@ -20,7 +20,7 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: #3a50d9;
 }
-/* Header */
+/* Header and mobile menu */
 header{
     position: sticky;
     top: 0;
@@ -41,9 +41,67 @@ header .content{
     justify-content: space-between;
     align-items: center;
 }
-header ul{
+header ul.navBar.desktop{
     list-style: none;
     display: flex;
+}
+.mobileMenu-wrapper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 63px;
+    z-index: 99;
+    display: none;
+    overflow: hidden;
+}
+.mobileMenu-wrapper ul.navBar.mobile{
+    color: white;
+    position: relative;
+    z-index: 101;
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    background: #060606;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    transform: translate(100vw, 0);
+}
+.mobileMenu-wrapper ul.navBar.mobile.active{
+    transform: translate(0vw, 0);
+}
+.mobileMenu-wrapper ul{
+    list-style: none;
+    text-align: center;
+    padding-top: 50px;
+}
+.mobileMenu-wrapper ul li{
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+header .burger-menu{
+    display: none;
+}
+header .burger-menu .lines{
+    width: 30px;
+    height: 30px;
+    display: inline-grid;
+    display: -ms-inline-grid;
+    display: -moz-inline-grid;
+}
+header .burger-menu .lines div{
+    width: 100%;
+    height: 2px;
+    background: white;
+    transition: all 0.3s ease;
+}
+header .burger-menu.active .lines div:nth-child(2){
+    display: none;
+}
+header .burger-menu.active .lines div:nth-child(1){
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+header .burger-menu.active .lines div:nth-child(3){
+    transform: rotate(45deg) translate(-5px, -5px);
 }
 header ul li{
     margin-left: 30px;
@@ -112,6 +170,9 @@ section.one .bg{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 section.one .bg .opacity{
@@ -153,7 +214,7 @@ section.one .content-block{
     padding: 10vw 14vw;
 }
 section.one .content-block .hello{
-    font-size: 1vw;
+    font-size: 19px;
     color: white;
 }
 section.one .content-block .title{
@@ -261,6 +322,7 @@ section.two{
     color: #060606;
     position: relative;
     padding-top: 80px;
+    overflow: hidden;
 }
 /* section name */
 section.two .about,
@@ -331,7 +393,7 @@ section.two .content{
     grid-template-columns: 1fr 1fr;
     column-gap: 70px;
     color: #060606;
-    margin-bottom: 60px;
+    margin-bottom: 130px;
 }
 section.two .content p{
     font-size: 18px;
@@ -408,7 +470,7 @@ section.two .parallax-content{
     position: relative;
     z-index: 3;
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 section.two .parallax-content h3{
     text-align: center;

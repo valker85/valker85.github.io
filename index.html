@@ -26,7 +26,9 @@
 
             <div class="content-block">
                 <h4 class="hello shine">Привет! Меня зовут Даниил, я -</h4>
-                <h1 class="title printEffect">Frontend</h1>
+                <div class="print-wrapper">
+                    <h1 class="title printEffect">Frontend</h1>
+                </div>
 
                 <ul>
                     <li class="element-animation anim-left">я создаю</li>
@@ -45,15 +47,34 @@
                 <a class="logo" href="#secOne">
                     <img src="./images/logo.png" alt="Daniil Kudryashov">
                 </a>
-                <ul class="navBar">
+                <ul class="navBar desktop">
                     <li><a href="#secOne">Главная</a></li>
                     <li><a href="#secTwo">Обо мне</a></li>
                     <li><a href="#secThree">Услуги</a></li>
                     <li><a href="#secFour">Портфолио</a></li>
                     <li><a href="#secFive">Контакты</a></li>
                 </ul>
+
+                <div class="burger-menu">
+                    <div class="lines">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobileMenu-wrapper">
+                <ul class="navBar mobile">
+                    <li class="mobileMenu-li"><a href="#secOne">Главная</a></li>
+                    <li class="mobileMenu-li"><a href="#secTwo">Обо мне</a></li>
+                    <li class="mobileMenu-li"><a href="#secThree">Услуги</a></li>
+                    <li class="mobileMenu-li"><a href="#secFour">Портфолио</a></li>
+                    <li class="mobileMenu-li"><a href="#secFive">Контакты</a></li>
+                </ul>
             </div>
         </header>
+
+
 
         <section class="section two parallax-effect-block" id="secTwo">
             <div class="decoration">
@@ -544,6 +565,7 @@
         <script src="./scripts/parallax.js"></script>
         <script src="./scripts/form.js"></script>
         <script src="./scripts/modalWindow.js"></script>
+        <script src="./scripts/mobileMenu.js"></script>
         <!-- Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
         

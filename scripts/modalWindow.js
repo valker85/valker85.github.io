@@ -81,7 +81,6 @@ setTimeout(() => {
     loader.appendChild(document.createElement("div"))
 }, 400)
 
-
 function modalWindow(id) {
     openPopUpFn()
     popUpText.innerHTML = popUpState[id].title

@@ -1,0 +1,393 @@
+/* ********** 1440px ********** */
+@media (max-width: 1440px) {
+    section.one .content-block {
+        padding: 10vw 9vw;
+    }
+    section.one .content-block .title {
+        font-size: 4.2vw;
+    }
+    section.one .goDown a{
+        width: 3vw;
+        height: 3vw;
+    }
+    section.one .content-block .printEffect::after{
+        height: 3.5vw;
+    }
+    section.two .about h1, section.three .services h1, section.four .portfolio h1, section.five .contact h1{
+        font-size: 6vw;
+    }
+    section.two .about h3, section.three .services h3, section.four .portfolio h3, section.five .contact h3 {
+        top: 40%;
+        font-size: 2.2vw;
+    }
+    section.two .about .line > div, section.three .services .line > div, section.four .portfolio .line > div, section.five .contact .line > div, section.five .line-bottom > div {
+        height: 3vw;
+    }
+    section.two .content {
+        max-width: 83vw;
+    }
+    section.two .content p {
+        font-size: 17px;
+    }
+    section.two .content p {
+        margin-bottom: 13px;
+    }
+    section.two .content h3 {
+        font-size: 24px;
+    }
+    section.two .content{
+        column-gap: 5vw;
+    }
+    section.two .about h1, section.three .services h1, section.four .portfolio h1, section.five .contact h1 {
+        font-size: 8vw;
+    }
+    section.two .about h3, section.three .services h3, section.four .portfolio h3, section.five .contact h3 {
+        top: 40%;
+        font-size: 2.7vw;
+    }
+    section.two .about .line > div, section.three .services .line > div, section.four .portfolio .line > div, section.five .contact .line > div, section.five .line-bottom > div {
+        height: 4vw;
+    }
+    section.two .parallax-mouse-effect, section.three .parallax-mouse-effect{
+        font-size: 2vw;
+    }
+    section.two .decoration-wrapper:nth-child(4), section.three .decoration-wrapper:nth-child(4) {
+        right: 15.43vw;
+        top: 225px;
+    }
+    section.two .decoration-wrapper:nth-child(1), section.three .decoration-wrapper:nth-child(1){
+        top: 90px;
+    }
+    section.two .decoration-wrapper:nth-child(2), section.three .decoration-wrapper:nth-child(2){
+        top: 171px;
+        left: 18.83vw;
+    }
+    section.two .decoration-wrapper:nth-child(3), section.three .decoration-wrapper:nth-child(3){
+        right: 20.04vw;
+    }
+    section.two .decoration-wrapper:nth-child(5), section.three .decoration-wrapper:nth-child(5){
+        right: 2.41vw;
+        top: 173px;
+    }
+    section.two .decoration-wrapper:nth-child(6), section.three .decoration-wrapper:nth-child(6){
+        left: 2vw;
+    }
+    section.two .content {
+        column-gap: 4vw;
+    }
+    section.two .content {
+        max-width: 81vw;
+    }
+    section.two .content .skill .name h4{
+        font-size: 19px;
+    }
+    section.two .content .skill .name .percent {
+        font-size: 18px;
+    }
+    header .content{
+        max-width: 82.98vw;
+    }
+    section.three .content-block {
+        max-width: 91vw;
+    }
+}
+/* ********** 1024px ********** */
+@media (max-width: 1024px) {
+    section.one .content-block .hello {
+        font-size: 14px;
+        color: white;
+    }
+    section.one .content-block .printEffect::after{
+        right: -10px;
+        bottom: 10px;
+    }
+    section.two .content p {
+        font-size: 16px;
+    }
+    section.two .parallax-mouse-effect, section.three .parallax-mouse-effect{
+        font-size: 2vw;
+    }
+    section.two .content h3 {
+        font-size: 22px;
+    }
+    section.two .content .skill .name h4 {
+        font-size: 17px;
+    }
+    section.two .parallax-content h3 {
+        font-size: 26px;
+    }
+    section.two .parallax-content ul li {
+        font-size: 18px;
+    }
+    section.two .parallax-content {
+        padding-bottom: 50px;
+    }
+    section.three .content-block {
+        max-width: 77vw;
+    }
+    section.three .content-block{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+    section.three .content-block .block {
+        padding: 30px 15px 60px 15px;
+    }
+}
+/* ********** 600px ********** */
+@media (max-width: 600px) {
+    section.one .content-block {
+        padding: 60px 15px 0;
+    }
+    section.one .content-block .hello {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    section.one .content-block .title {
+        font-size: 42px;
+    }
+    section.one .content-block .printEffect::after{
+        height: 35px;
+    }
+    section.one .content-block .print-wrapper{
+        padding: 0 39vw 0 0;
+    }
+    section.one .content-block ul {
+        margin-top: 13vw;
+    }
+    section.one .content-block ul li{
+        font-size: 6.1vw;
+        margin-bottom: 1vw;
+    }
+    section.one .photo img{
+        width: 26vh;
+    }
+    section.one .photo .circle{
+        width: 50vh;
+        height: 50vh;
+    }
+    section.one .goDown a {
+        width: 10vw;
+        height: 10vw;
+        font-size: 3.5vw;
+    }
+    section.one .goDown{
+        bottom: 6vw;
+    }
+    section.two{
+        padding: 30px 0px 0;
+    }
+    section.two .content {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        text-align: center;
+        padding: 15px;
+        margin-bottom: 40px;
+        margin-top: 17px;
+    }
+    section.two .about h1, section.three .services h1, section.four .portfolio h1, section.five .contact h1 {
+        font-size: 16vw;
+    }
+    section.two .about h3, section.three .services h3, section.four .portfolio h3, section.five .contact h3 {
+        top: 37%;
+        font-size: 6.5vw;
+    }
+    section.two .parallax-mouse-effect, section.three .parallax-mouse-effect{
+        font-size: 4vw;
+    }
+    section.two .decoration-wrapper:nth-child(1), section.three .decoration-wrapper:nth-child(1){
+        left: 15px;
+        transform: rotate(20deg);
+        top: 120px;
+    }
+    section.two .decoration-wrapper:nth-child(2), section.three .decoration-wrapper:nth-child(2){
+        top: 25px;
+        left: 25px;
+        transform: rotate(-20deg);
+    }
+    section.two .decoration-wrapper:nth-child(3), section.three .decoration-wrapper:nth-child(3){
+        right: 25px;
+        top: 15px;
+    }
+    section.two .decoration-wrapper:nth-child(5), section.three .decoration-wrapper:nth-child(5) {
+        right: 25px;
+        top: 130px;
+    }
+    section.two .decoration-wrapper:nth-child(4), section.three .decoration-wrapper:nth-child(4){
+        right: 27vw;
+        top: 135px;
+    }
+    section.two .decoration-wrapper:nth-child(6), section.three .decoration-wrapper:nth-child(6) {
+        left: 15px;
+        top: 325px;
+    }
+    section.two .decoration-wrapper:nth-child(7), section.three .decoration-wrapper:nth-child(7) {
+        right: 15px;
+        top: 325px;
+        transform: rotate(-20deg);
+    }
+    section.two .content h3 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    section.two .parallax-content h3{
+        font-size: 7vw;
+    }
+    section.two .about .line > div, section.three .services .line > div, section.four .portfolio .line > div, section.five .contact .line > div, section.five .line-bottom > div {
+        height: 50px;
+    }
+    section.two .parallax-content ul{
+        margin-left: 0;
+    }
+    header {
+        padding: 0px 0px;
+    }
+    header .content{
+        height: 64px;
+        padding: 0 15px;
+    }
+    header .logo img{
+        width: 50vw;
+    }
+    header ul.navBar.desktop{
+        display: none;
+    }
+    header .burger-menu{
+        display: block;
+    }
+    .mobileMenu-wrapper .navBar.mobile ul li{
+        color: white;
+    }
+    .mobileMenu-wrapper .navBar.mobile ul li a{
+        color: white;
+    }
+    section.two .parallax-content ul li {
+        font-size: 4.75vw;
+    }
+    section.three .content-block {
+        grid-template-columns: 1fr;
+    }
+    section.three .content-block {
+        margin-top: 25px;
+    }
+    section.three {
+        padding: 40px 0 80px;
+    }
+}
+/* ********** 320px ********** */
+@media (max-width: 320px) {
+    section.one .content-block .hello {
+        font-size: 4.5vw;
+    }
+    section.one .content-block .title {
+        font-size: 12vw;
+    }
+    section.two .parallax-content ul li {
+        font-size: 5.2vw;
+    }
+    section.three .content-block {
+        max-width: 91vw;
+    }
+    section.two .about h3, section.three .services h3, section.four .portfolio h3, section.five .contact h3{
+        top: 32%;
+    }
+}
+/* ********** Планшеты ********** */
+@media (max-width: 1023px) and (max-height: 1400px) and (min-width: 601px) and (min-height: 768px) {
+    section.one .content-block .hello {
+        font-size: 2.5vw;
+    }
+    section.one .content-block .title {
+        font-size: 7vw;
+    }
+    section.one .content-block .print-wrapper{
+        padding: 0 43vw 0 0;
+    }
+    section.one .content-block ul {
+        margin-top: 13vw;
+    }
+    section.one .content-block ul li{
+        font-size: 4vw;
+        margin-bottom: 1vw;
+    }
+    section.one .photo img{
+        width: 30vh;
+    }
+    section.one .photo .circle{
+        width: 65vh;
+        height: 65vh;
+    }
+    section.one .goDown a {
+        width: 5vw;
+        height: 5vw;
+    }
+    section.one .goDown a{
+        font-size: 1.5vw;
+    }
+    section.one .content-block .printEffect::after {
+        height: 6.5vw;
+    }
+    section.two .about h1, section.three .services h1, section.four .portfolio h1, section.five .contact h1 {
+        font-size: 9vw;
+    }
+    section.two .content {
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+    }
+    section.two .about .line > div, section.three .services .line > div, section.four .portfolio .line > div, section.five .contact .line > div, section.five .line-bottom > div {
+        height: 6vw;
+    }
+    section.two .about h3, section.three .services h3, section.four .portfolio h3, section.five .contact h3 {
+        top: 36%;
+        font-size: 3.3vw;
+    }
+    section.two .content p {
+        font-size: 18px;
+        text-align: center;
+    }
+    section.two .parallax-mouse-effect, section.three .parallax-mouse-effect {
+        font-size: 3vw;
+    }
+    section.two .content h3 {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    section.two .content .skill .name h4 {
+        font-size: 2.4vw;
+    }
+    section.two .content .skill .name .percent {
+        font-size: 2.4vw;
+    }
+    section.two .parallax-content ul li {
+        font-size: 2.5vw;
+    }
+    header {
+        padding: 0px 0px;
+    }
+    header .content{
+        height: 64px;
+        padding: 0 15px;
+    }
+    header .logo img{
+        width: 33vw;
+    }
+    header ul.navBar.desktop{
+        display: none;
+    }
+    header .burger-menu{
+        display: block;
+    }
+    .mobileMenu-wrapper .navBar.mobile ul li{
+        color: white;
+    }
+    .mobileMenu-wrapper .navBar.mobile ul li a{
+        color: white;
+    }
+    .mobileMenu-wrapper ul li {
+        margin-bottom: 30px;
+        font-size: 2.5vw;
+    }
+    .mobileMenu-wrapper ul {
+        padding-top: 12vw;
+    }
+}
