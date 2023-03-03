@@ -411,6 +411,14 @@ section.two .content .circle{
     margin-bottom: 10px;
 }
 section.two .content a{
+    color: #3a4fd9;
+    text-shadow: none;
+    /* transition: all 0.3s ease; */
+    text-decoration: none;
+    border-bottom: 2px solid #3a4fd9;
+}
+section.two .content a:hover{
+    border-bottom: none;
 
 }
 section.two .content h3{
