@@ -20,6 +20,19 @@
     opacity: 1;
     transform: translate(0vw, 0px);
 }
+/* section 5 */
+section.four .projects .project.anim-left{
+    transform: translate(-14vw, 0px) rotateY(0deg);
+}
+section.four .projects .project.anim-right{
+    transform: translate(14vw, 0px) rotateY(0deg);
+}
+section.four .projects .project.anim-top{
+    transform: translate(0, -14vw) rotateY(0deg);
+}
+section.four .projects .project.element-show {
+    transform: translate(0vw, 0px) rotateY(0deg);
+}
 /* ========================================== */
 /* ****************************************** */
 

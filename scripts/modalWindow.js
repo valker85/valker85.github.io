@@ -97,7 +97,7 @@ function sliderContent(content) {
         for (let i = 0; i < content.length; i++) {
             let slide = document.createElement("div")
             let img = document.createElement("img")
-    
+            
             slide.classList.add('swiper-slide')
             img.src = content[i]
     

@@ -585,6 +585,7 @@ section.three .content-block .block:hover{
 section.four{
     background: white;
     padding: 50px 0 50px;
+    overflow: hidden;
 }
 section.four h3.info{
     max-width: 400px;
@@ -704,7 +705,7 @@ section.four .projects .back p{
     margin-left: 60px;
     margin-bottom: 30px;
     color: #3a50d9;
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: -1px;
 }
 /* Slider */
@@ -780,7 +781,7 @@ section.four .projects .back p{
 /* ================== Section 5 ================= */
 section.five{
     background: #060606;
-    padding: 19vw 0 100px;
+    padding: 335px 0 100px;
     position: relative;
     overflow: hidden;
 }
